@@ -14,7 +14,8 @@
   },
   "scripts": {
     "crawl": "npx tsx crawlToQdrant.ts",
-    "qdrant": "docker run -p 6333:6333 -p 6334:6334 -v \"$(pwd)/qdrant_storage:/qdrant/storage:z\" qdrant/qdrant"
+    "qdrant": "docker run -p 6333:6333 -p 6334:6334 -v \"$(pwd)/qdrant_storage:/qdrant/storage:z\" qdrant/qdrant",
+    "qdrant:dashboard": "open http://localhost:6333/dashboard"
   },
   "type": "module"
 }
